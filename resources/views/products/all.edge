@@ -7,12 +7,21 @@
 @section('content')
   <section class="content-area products-all-page">
     <div class="filter-section">
-      filter
+      <div class="filter">
+        <input type="checkbox" id="gender-options" class="toggle" checked>
+        <label class="title" for="gender-options">Gender</label>
+        <div class="content">
+          <div class="gender">
+            <div class="option">Male</div>
+            <div class="option">Female</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="all-products-grid">
-      {{users}}
-      <div class="product-wrap">
-        <div class="product">
+      @each(product in products)
+        <div class="product-wrap">
+          <div class="product">
             <div class="circle">
                 <img src="image/products/adidas-yeezy-boost-350-white.png">
             </div>
@@ -23,7 +32,9 @@
           <div class="price">
             $350
           </div>
-      </div>
+        </div>
+      @endeach
+      
     </div> 
 </section>
 @endsection
