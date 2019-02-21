@@ -7,9 +7,23 @@
   .filter-section{
       .toggle{
         display: none;
+        &:checked{
+          & + .title + .content{
+            max-height: 200px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+          }
+          & + .title:before{
+            transform: rotate(90deg)
+            !important;
+          }
+        }
       }
+
       .filter{
         position: relative;
+        margin-bottom: 2rem;  
+        padding: 0 20px;
       }
       .title,.content{
         backface-visibility: hidden;
@@ -47,6 +61,20 @@
           list-style: none;
           text-align: center;
         }
+        .brand{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          list-style: none;
+          text-align: center;
+        }
+        .size{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          list-style: none;
+          text-align: center;
+        }
         .option{
           border: 1px solid #fff;
           padding: 10px;
@@ -56,6 +84,12 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          &:hover, &.selected{
+            background: red;
+            color: white;
+            font-weight: 700;
+            border: 1px solid red;
+          }
         }
       }
   }
