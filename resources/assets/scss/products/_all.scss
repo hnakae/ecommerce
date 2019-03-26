@@ -37,6 +37,7 @@
         color: black;
         font-weight: 700;
         margin-bottom: 1rem;
+        cursor: pointer;
       }
       .title:after, .title:before{
         content: '';
@@ -68,6 +69,20 @@
           list-style: none;
           text-align: center;
         }
+        .price{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          list-style: none;
+          text-align: center;
+          input{
+            font-size: 1.2rem;
+          }
+          .option:hover{
+            background: #ecf0f3
+            !important;
+          }
+        }
         .size{
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -84,6 +99,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          cursor: pointer;
           &:hover, &.selected{
             background: red;
             color: white;
