@@ -1,0 +1,36 @@
+@layout('layouts/main')
+
+@section('title')
+  Freshgear | Login
+@endsection
+
+@section('content')
+  <section class="content-area login_register-page">
+    <div class="container">
+      <div class="box-container">
+        <h2>Register</h2>
+        <div class="login-grid register">
+          <form action="" method="POST">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            
+            
+            <button type="submit">Log In</button>
+          </form>
+          <div class="line"></div>
+
+        </div>
+        <div class="footer">
+          Already have an account? <a href="/login">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+@endsection
+
+@section('javascript')
+  <script>
+    // console.log("hello")
+  </script>
+@endsection

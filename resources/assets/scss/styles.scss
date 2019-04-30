@@ -2,7 +2,8 @@
 @import "reset";
 @import "pages/home";
 @import "pages/about";
-@import "products/_all";
+@import "products/all";
+@import "account/login_register";
 
 
 body {
@@ -277,3 +278,29 @@ header{
     }
   }
 }
+
+.box-container{
+  background: white;
+  padding: 80px 20px;
+}
+
+form{
+  input[type="password"], input[type="email"], input[type="text"]{
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #6c6c6c;
+  }
+  button{
+    border: none;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgb(27, 108, 206);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+
