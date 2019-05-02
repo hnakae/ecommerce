@@ -3,6 +3,7 @@
 @import "pages/home";
 @import "pages/about";
 @import "products/all";
+@import "products/single";
 @import "account/login_register";
 
 
@@ -152,9 +153,9 @@ header{
   &.cart-popup-active{
     filter: blur(15px);
   }
-  &.home-page{
+  // &.home-page{
 
-  }
+  // }
 }
 
 
