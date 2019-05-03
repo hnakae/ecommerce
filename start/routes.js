@@ -19,11 +19,17 @@ const Route = use('Route')
 Route.get('/', 'PageController.home');
 Route.get('/about', 'PageController.about');
 
+// Products
 Route.get('/products', 'ProductController.index');
-
 Route.get('/:brand/:subcategory/:slug', 'ProductController.show');
 Route.get('/products/new-arrivals', 'ProductController.newArrivals');
 
-// User Authentication
+// Cart
+Route.get('/cart/checkout', 'CartController.checkout');
+
+// Account
+Route.get('/account', 'UserController.index');
+Route.get('/account/change-password', 'UserController.changePassword');
+Route.get('/account/orders', 'UserController.orders');
 Route.get('/register', 'UserController.register');
 Route.get('/login', 'UserController.login');

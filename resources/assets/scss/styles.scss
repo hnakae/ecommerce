@@ -4,6 +4,8 @@
 @import "pages/about";
 @import "products/all";
 @import "products/single";
+@import "cart/checkout";
+@import "account/index";
 @import "account/login_register";
 
 
@@ -92,6 +94,7 @@ h1 {
 }
 
 header{
+  background: #E3E8EC;
   position: fixed;
   display: flex;
   justify-content: space-between;

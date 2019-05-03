@@ -59,6 +59,24 @@
               margin-bottom: 2rem;
             }
           }
+          .add-to-cart{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            .button-area{
+              .button{
+                border: 1px solid #1f1f1f;
+                background: #fff;
+                padding: 1rem 1rem;
+                display: block;
+                color: black;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                cursor: pointer;
+                text-align: center;
+              }
+            }
+          }
         }
         .detail-section{
             padding: 0;
@@ -76,7 +94,11 @@
                 }
               }
             }
-        
+            
+            .sizes{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+            }
             .detail{
               position: relative;
               margin-bottom: 2rem;  
@@ -95,6 +117,10 @@
               font-weight: 700;
               margin-bottom: 1rem;
               cursor: pointer;
+              &.size-title{
+                background: black;
+                color: white;
+              }
             }
             .title:after, .title:before{
               content: '';
@@ -104,6 +130,12 @@
               width: 2px;
               height: 0.75em;
               background-color: black;
+              transition: all 0.2s;
+            }
+            .size-title:after, .size-title:before{
+              content: '';
+
+              background-color: white;
               transition: all 0.2s;
             }
             .title:after{
@@ -123,10 +155,10 @@
                 justify-content: center;
                 cursor: pointer;
                 &:hover, &.selected{
-                  background: red;
+                  background: #1f1f1f;
                   color: white;
                   font-weight: 700;
-                  border: 1px solid red;
+                  border: 1px solid #1f1f1f;
                 }
               }
             }
