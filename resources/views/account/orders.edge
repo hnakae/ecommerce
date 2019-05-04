@@ -12,12 +12,47 @@
         <hr>
         <div class="checkout-grid">
           <div class="forms">
-            Welcome to your Orders
+            <div class="order-list">
+              <table>
+                <thead>
+                  <tr>
+                    <td>ID</td>
+                    <td>Price</td>
+                    <td>Date</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>124083729</td>
+                    <td>$3,200</td>
+                    <td>5/3/2019</td>
+                    <td><span class="tag shipped">Shipped</span></td>
+                  </tr>
+                  <tr>
+                    <td>124083729</td>
+                    <td>$3,200</td>
+                    <td>5/3/2019</td>
+                    <td><span class="tag shipped">Shipped</span></td>
+                  </tr>
+                  <tr>
+                    <td>124083729</td>
+                    <td>$3,200</td>
+                    <td>5/3/2019</td>
+                    <td><span class="tag shipped">Shipped</span></td>
+                  </tr>
+                  <tr>
+                    <td>124083729</td>
+                    <td>$3,200</td>
+                    <td>5/3/2019</td>
+                    <td><span class="tag canceled">Canceled</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="sub-menu">
-            <a href="/account">Account</a>
-            <a href="/account/orders">Order</a>
-            <a href="/account/change-password">Change Password</a>
+            @include('account/sub-menu')
           </div>
         </div>
       </div>
