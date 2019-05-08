@@ -13,6 +13,7 @@ class CartPopup extends Component {
 	render() {
 		return (
 			<section id="cart-popup" className="">
+				{/* check */}
 				<div className="cart-title">
 					<div className="title">My Cart</div>
 				</div>
