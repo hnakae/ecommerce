@@ -5,7 +5,7 @@ class CartPopup extends Component {
 	constructor() {
 		super();
 		this.state = {
-			name: 'Joe'
+			name: 'Hiro'
 		};
 	}
 	clickedBtn = () => {};
